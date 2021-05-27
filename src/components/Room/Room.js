@@ -213,7 +213,7 @@ const Room = (props) => {
     e.preventDefault();
     socket.emit('BE-leave-room', { roomId, leaver: currentUser });
     sessionStorage.removeItem('user');
-    window.location.href = '/room';
+    window.location.href = '/';
   };
 
   const toggleCameraAudio = (e) => {
